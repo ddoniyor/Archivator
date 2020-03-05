@@ -1,4 +1,4 @@
-package main
+package archivator
 
 import (
 	"testing"
@@ -6,7 +6,7 @@ import (
 
 func Benchmark_concurrentArchivator(b *testing.B) {
 	for i:=0; i< b.N; i++{
-		concurrent([]string{
+		Concurrent([]string{
 			"one.txt",
 			"two.txt",
 			"three.txt",
